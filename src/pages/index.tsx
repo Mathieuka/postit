@@ -4,6 +4,8 @@ import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
 import { API } from "@aws-amplify/api";
 import config from "../aws-exports";
+import { listEvents } from "@/graphql/queries";
+import { DocumentNode, useQuery } from "@apollo/client";
 
 // after your imports
 API.configure(config);
@@ -11,6 +13,10 @@ API.configure(config);
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+  // const response = useQuery(listEvents);
+
+  // console.log("%c LOG response", "background: #222; color: #bada55", response);
+
   return (
     <>
       <Head>
