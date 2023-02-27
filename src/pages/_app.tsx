@@ -10,6 +10,7 @@ import {
 import { AuthOptions, createAuthLink } from "aws-appsync-auth-link";
 import { createSubscriptionHandshakeLink } from "aws-appsync-subscription-link";
 import appSyncConfig from "../aws-exports";
+import ErrorBoundary from "@/component/error-boundary";
 
 /* The HTTPS endpoint of the AWS AppSync API
    Custom domain names can have any format, but must end with `/graphql` */
